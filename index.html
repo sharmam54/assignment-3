@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class activity</title>
+</head>
+
+<body>
+    <label for="number1">Enter the first number:</label>
+    <input type="number" id="number1">
+
+    <label for="number2">Enter the second number:</label>
+    <input type="number" id="number2">
+
+    <button onclick="addValues()">Add Numbers</button>
+
+    <p id="Paragraph"></p>
+
+    <script>
+        let currentResult;
+
+        function addValues() {
+
+            var num1 = parseInt(document.getElementById("number1").value);
+            var num2 = parseInt(document.getElementById("number2").value);
+
+            currentResult = num1 + num2;
+
+            document.getElementById("Paragraph").innerText = "Result: " + currentResult;
+        }
+    </script>
+</body>

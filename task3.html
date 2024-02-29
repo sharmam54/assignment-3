@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_3</title>
+</head>
+
+<body>
+    <h1 id="result"></h1>
+    <p id="refresh"></p>
+</body>
+<script>
+    let sum = 0
+
+    function addition(x) {
+        sum += x;
+    }
+    addition(54);
+    addition(69);
+    addition(6985)
+        alert("The Result : " + sum);
+    document.getElementById('result').innerHTML ="The Result : " + sum;
+    document.getElementById('refresh').innerHTML = "refresh the page to see that again :)"
+</script>
+
+</html>
